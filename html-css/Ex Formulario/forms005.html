@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+
+            <legend>Sexo</legend>
+
+            <label for="sexo"> <input type="radio" name="mas" id="sxmas">Masculino</label>
+
+            <label for="sxfem"> <input type="radio" name="sexo" id="sxfem">Feminino</label>
+
+            <!--input radio = Name igual ajuda a nao acontecer o bug de nao conseguir tirar a marcaçao , nao serve para os outros tipo de input,so pode ser uma opçao.-->
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Esportes favoritos</legend>
+
+            <label for="ifut"> <input type="checkbox" name="futebol" id="ifut" checked> Futebol</label><br>
+            <!--TAG=CHECKED=JA DEIXA MARCADO POR PADRAO-->
+
+            <label for="ibas"> <input type="checkbox" name="basquete" id="ibas"> Basquete</label><br>
+
+            <label for="ivol"> <input type="checkbox" name="volei" id="ivol"> Volei</label>
+        </fieldset>
+
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+
+    </form>
+
+  </body>
+
+</html>
