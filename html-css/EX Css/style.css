@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right,#F9DD9B,#F2B279);
+}
+p{
+    text-align: justify;
+    font-family: "Archivo Black", sans-serif;
+}
+main{
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(146, 116, 116);
+    background-color: white;
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    font-family: "Archivo Black", sans-serif;
+}
+h1{
+    font-size: 3em;
+    font-family: "Archivo Black", sans-serif;
+    color:#707317;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgb(143, 104, 104);
+}

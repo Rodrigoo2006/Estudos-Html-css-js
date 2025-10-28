@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgroup</title>
+    <style>
+        table{
+            width: 300px;
+           border-collapse: separate;
+
+        }
+        td,th{
+            border: 1px solid black;
+        }
+        col.cnome {
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissao</th>
+        </tr>
+        <tr>
+            <td>Jessica</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Felipa</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Carlinha</td>
+            <td>F</td>
+            <td>35</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ana maria</td>
+            <td>F</td>
+            <td>65</td>
+            <td>Progamadora</td>
+        </tr>
+        <tr>
+            <td>Carla</td>
+            <td>F</td>
+            <td>85</td>
+            <td>Engenheira</td>
+        </tr>
+    </table>
+</body>
+</html>

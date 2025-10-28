@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 200px;
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+             <td>Carla</td>
+             <td>X-MEN</td>
+             <td>Barbie</td>
+             <td>Vingadores</td>
+            </tr>
+            <tr>
+             <td>Jessica</td>
+             <td>A ursupadora</td>
+             <td>Barbie</td>
+             <td>Vingadores</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Carlos</td>
+                <td>Carros 2</td>
+                <td>The Witcher</td>
+               <td>Vingadores</td>
+            </tr>
+             <tr>
+             <td>Gabriel</td>
+             <td>X-MEN</td>
+             <td>Barbie</td>
+             <td>Vingadores</td>
+            </tr>
+            <tr>
+             <td>Kauan</td>
+             <td>Salem</td>
+             <td>Barbie</td>
+             <td>Vingadores</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="4">TOTAL</th>
+            <td>1000</td>
+        </tfoot>
+      
+    </table>
+</body>
+</html>
