@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+        #  = id
+        .  = class
+        :  = pseudo class
+        :: = pseudo element
+        >  = filho 
+        */
+        a{
+            color: #000;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        a:visited{
+            color: rgb(0, 255, 42);
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+
+        .especial{
+           background-color: rgb(52, 88, 47);
+        }
+        
+        a::before{
+            content: '→';
+        }
+        a::after{
+            content: '←';
+        }
+        .especial::before{
+            content: "→";
+        }
+
+        .especial::after{
+            content: "←";
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/Rodrigoo2006" class="especial">Github</a></li>
+    </ul>
+</body>
+</html>
