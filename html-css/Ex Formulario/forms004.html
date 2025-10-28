@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            background-color: antiquewhite;
+        }
+        legend{
+            background-color: aqua;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+<fieldset> <!--Fieldset=AGRUPAMENTO-->
+     <legend>Dados pessoais</legend>
+        <p>
+                <label for="iname">Nome:</label>
+                <input type="text" name="nome" id="iname" required minlength="5" maxlength="15">
+        </p>
+    
+        <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+        </p>
+             <!--Estudar mais sobre RegEx-->
+        <p>
+            <label for="itel">Telefone:</label>
+            <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^[0-9]{4}-[0-9]{4}$" required>
+        </p>
+    
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+</fieldset>
+  
+    </form>
+</body>
+</html>
