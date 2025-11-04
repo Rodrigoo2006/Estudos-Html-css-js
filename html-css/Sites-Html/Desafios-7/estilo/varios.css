@@ -8,21 +8,15 @@ Desktop: 992px ate 1200px
 Grandes Telas: acimda de 1200px
 */
 
-@media screen and (min-width:768px) and (max-width:992px){
-    main article {
-       min-width: 768px;
-       max-width: 992px;
-    }
+@media screen and (min-width:768px){
+   div >P{
+    display: none;
+   }
+   div >ul{
+    display: block;
+   }
+   div ul{
     
-}
-@media screen and (min-width:992px) and (max-width:1200px){
-    main article {
-       min-width: 992px;
-       max-width: 1200px;
-    }
-}
-@media screen and (min-width:1200px) {
-    main article {
-       min-width: 1200px;
-    }
+   }
+   
 }
