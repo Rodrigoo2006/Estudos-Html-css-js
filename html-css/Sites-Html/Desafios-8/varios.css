@@ -8,8 +8,28 @@ Desktop: 992px ate 1200px
 Grandes Telas: acima de 1200px
 */
 
-@media screen and (min-width:769px){
+@media screen and (max-width:769px) {
     main{
-       max-width: 992px;
+       width: 450px;
+    }
+    form h2 {
+       margin-left: 80px;
+    }
+    
+    form input {
+      margin-right: 10px;
+      width: 230px;
+    }
+    .envio{
+        width: 200px;
+        position: relative;
+        bottom: 50px;
+        left: 20px;
+    }
+    .senha {
+        width: 200px;
+        position: relative;
+        bottom: 50px;
+        left: 20px;
     }
 }
