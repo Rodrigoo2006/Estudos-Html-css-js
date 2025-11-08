@@ -19,7 +19,6 @@ h2{
     font-family: Arial, sans-serif;
 }
 form,.envio,.senha{
-   
    margin-right: 350px;
 }
 form input{
@@ -45,9 +44,7 @@ form input{
     width:380px;
     border: none; 
     background-color: rgba(136, 255, 0, 0.329);
-    height: 30px;
-    
-    
+    height: 30px; 
 }
 img{
     width: 350px;
@@ -56,4 +53,5 @@ img{
     bottom: 0%;
     left: 55%;
     border-radius: 10px;
+    overflow: hidden;
 }
