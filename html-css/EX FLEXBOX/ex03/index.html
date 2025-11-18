@@ -11,25 +11,30 @@
         div.conteiner{
             background-color: antiquewhite;
             display: flex;
+
             flex-flow: row wrap;
+
+            justify-content: space-evenly;/*MAIN AXIS */
+            align-items: center; /*CROSS AXIS */
+            height: 300PX;
         }
         div.item{
             background-color: aqua;
-            padding: 10px;
+           
             border: 1px solid black;
             text-align: center;
-            flex: auto;
+            
         }
     </style>
 </head>
 <body>
     <h1>FLEXBOX</h1>
     <div class="conteiner">
-        <div class="item">Exemplo de Bloco A</div>
-        <div class="item">Exemplo de Bloco B</div>
-        <div class="item">Exemplo de Bloco C</div>
-        <div class="item">Exemplo de Bloco D</div>
-        <div class="item">Exemplo de Bloco E</div>
+        <div class="item"> A</div>
+        <div class="item"> B</div>
+        <div class="item"> C</div>
+        <div class="item"> D</div>
+        <div class="item"> E</div>
     </div>
 </body>
 </html>
