@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box - ALIGN-CONTENT</title>
+    <title>Flexible Box-Align Self</title>
     <style>
         h1{
             text-align: center;
@@ -11,40 +11,56 @@
         div.conteiner{
             background-color: antiquewhite;
             display: flex;
+
             flex-flow: row wrap;
+            align-items: flex-start;
             height: 400px;
-            align-content: space-between;
         }
         div.item{
             background-color: aqua;
-            padding: 40px;
+            padding: 20px;
             border: 1px solid black;
             text-align: center;
+        }
+        div#i1{
+           
+        }
+        div#i2{
+            align-self: auto;/*HERDA O COMPORTAMENTO DO PAI*/
+        }
+        div#i3{
+            align-self: flex-end;/*CONFIGURA O COMPORTAMENTO INDIVIDUAL*/
+        }
+        div#i4{
             
+        }
+        div#i5{
+           align-self: center; /*CONFIGURA O COMPORTAMENTO INDIVIDUAL*/
+        }
+        div#i6{
+            
+        }
+        div#i7{
+           align-self: stretch; /*CONFIGURA O COMPORTAMENTO INDIVIDUAL*/
+        }
+         
             /*
             1-  jUSTIFY-CONTENT : serve para alinhar o conteúdo,alinhar os itens dentro do eixo principal.
             2-  ALIGN-ITEMS: serve para alinhar os conteúdos,itens dentro do eixo transversal.
             3-  ALIGN-CONTENT: serve para alinhar os elementos do eixo transversal quando eles estão empacotados.
             */
-        }
     </style>
 </head>
 <body>
     <h1>FLEXBOX</h1>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
-        <div class="item">H</div>
-        <div class="item">I</div>
-        <div class="item">J</div>
-        <div class="item">K</div>
-        <div class="item">L</div>
-        <div class="item">M</div>
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
     </div>
 </body>
 </html>
