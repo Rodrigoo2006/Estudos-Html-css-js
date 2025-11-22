@@ -14,19 +14,18 @@ p,h3,h2 {
 section.flex-container{
     padding: 20px;
     background-color: lightgray;
-    display: flex;
-    flex-flow: column nowrap;
+    display: flex; 
+    flex-flow: column nowrap; /*UM EM CIMA DO OUTRO E NAO QUEBRA */ 
    
 }
 div.Media-Text{
-   display: flex;
-   flex-flow: row wrap-reverse;
-  
+   display: flex; /*JOGA PARA AO LADO NO CASO */ 
+   flex-flow: row wrap-reverse; /*JOGA PARA CIMA AO QUEBRAR */
 }
 
 div.Text-media{
-    display: flex;
-    flex-flow: row wrap;
+    display: flex; /*JOGA PARA AO LADO NO CASO */ 
+    flex-flow: row wrap; /*MOVIMENTO NORMAL AO QUEBRAR */
 }
 
 div.text{
