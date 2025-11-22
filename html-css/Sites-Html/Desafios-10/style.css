@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header,.normal{
+    padding: 20px;
+}
+p,h3,h2 {
+    margin-bottom: 10px;
+}
+section.flex-container{
+    padding: 20px;
+    background-color: lightgray;
+    display: flex;
+    flex-flow: column nowrap;
+   
+}
+div.Media-Text{
+   display: flex;
+   flex-flow: row wrap-reverse;
+  
+}
+
+div.Text-media{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div.text{
+    flex: 1 1 500px;
+    border: 2px dashed blue;
+}
+div.media{
+    flex: 1 0 500px;
+    border: 2px dashed red;
+}
+div.media img,iframe {
+    margin: auto;
+    display: block;
+    padding-right:20px ;
+}
