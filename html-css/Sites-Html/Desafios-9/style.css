@@ -24,12 +24,12 @@ header h2 {
 header nav{
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    
 }
 nav a {
     font-size: 1.1em;
     background-color: rgba(0, 0, 0, 0.349);
-    padding: 6px;
+    padding: 10px;
     border-radius: 5px;
 }
 nav a:hover{
