@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRID LAYOUT NA PRATICA</title>
+    <title>GRID LAYOUT NA PRATICA - Funçao Repeat E Fr </title>
 </head>
 <style>
     div.container{
         border: 3px solid blue;
-        height: 250px;
-
         display: grid;
-        grid-template-columns: auto auto auto ; /* Shorthand de Grid columns e rows = GRID TEMPLATE*/
-        grid-template-rows:auto auto auto;
-        align-items: center; /*CROSS AXIS */
+        gap: 10px; 
+        /*grid-template: repeat(3,100px) / repeat(3,auto);*/
+
+        grid-template-columns: 1fr 2fr 1fr; /*Divide o tamanho do container pela quantidade de FR e pode aumentar o fr q tiver maior*/
+
+        /*grid-template-columns: 100px 20% 1fr 1fr; Baseado no tamanho do container o fr e o q sobra do tamanho*/
+
+        grid-auto-rows: 100px; /*Qualquer Novo conteudo tera esse tamanho*/
+        /*grid-auto-columns:100px , Qualquer nova coluna tera essa largura*/
+
         /*justify-items: center; MAIN AXIS*/ /*ITEMS NA TEM SPACE*/
         /* Shorthand de items = Place-Items*/
 
         /*DENTRO DA CAIXA=ITEM
         CONTEUDO TODO=CONTENT */
-
+        
         /*align-content: center; conjunto de tudo,CROSS AXIS*/
         /*justify-content: center; conjunto de tudo,MAIN AXIS*/
         /* Shorthand de content = Place-content*/
-
-        gap: 10px;
+      
     }
     div.item{
         border: 3px solid red;
@@ -42,6 +46,8 @@
         <div class="item">F</div>
         <div class="item">G</div>
         <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
 </body>
 </html>
