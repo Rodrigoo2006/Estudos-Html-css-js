@@ -10,3 +10,4 @@
 10- FLEX: serve como um atalho que agrupa as três propriedades acima (grow, shrink e basis) em uma só linha.
 11- ORDER: serve para alterar a ordem visual de um item específico sem modificar o código HTML.
 12- ALIGN-SELF: serve para alinhar um item individualmente, permitindo ignorar a regra de alinhamento do pai.
+13- DISPLAY: FLEX: serve para ativar o layout flexível no elemento pai. Sem ele, nenhuma das outras 12 propriedades funciona.
