@@ -1,0 +1,72 @@
+Comando 1: Ativar Container Flexível
+Objetivo: Definir um elemento como pai (container) de um layout flexível.
+------------------------------------------------------------------
+div.conteiner { display: flex; }
+
+Comentário:
+1. 'display: flex' transforma a tag div em um container flexível.
+2. Por padrão, todos os itens internos (filhos) são organizados em linha.
+------------------------------------------------------------------
+Comando 2: Ajuste de Direção (flex-direction)
+Objetivo: Definir se os itens seguem em linha ou em coluna.
+------------------------------------------------------------------
+div.conteiner { flex-direction: column-reverse; }
+
+Comentário:
+1. 'flex-direction' define o eixo principal do container.
+2. 'column-reverse' empilha os itens verticalmente de baixo para cima.
+------------------------------------------------------------------
+Comando 3: Atalho de Fluxo (flex-flow)
+Objetivo: Definir a direção e se haverá quebra de linha em um único comando.
+------------------------------------------------------------------
+div.conteiner { flex-flow: row wrap; }
+
+Comentário:
+1. O 'flex-flow' combina as propriedades 'flex-direction' e 'flex-wrap'.
+2. 'row wrap' organiza os itens em linha e permite que pulem para a próxima linha se não houver espaço.
+------------------------------------------------------------------
+Comando 4: Alinhamento de Itens (justify e align)
+Objetivo: Posicionar itens nos eixos principal e transversal.
+------------------------------------------------------------------
+div.conteiner { justify-content: space-evenly; align-items: center; }
+
+Comentário:
+1. 'justify-content' serve para alinhar o conteúdo dentro do eixo principal.
+2. 'align-items' serve para alinhar os itens dentro do eixo transversal.
+3. 'space-evenly' distribui espaços iguais entre os itens e as bordas.
+Obs: Para alinhar verticalmente com 'center', o container precisa ter uma altura (height) definida.
+------------------------------------------------------------------
+Comando 5: Alinhamento de Conteúdo Empacotado (align-content)
+Objetivo: Alinhar o bloco de linhas quando os itens estão em 'wrap'.
+------------------------------------------------------------------
+div.conteiner { align-content: space-between; }
+
+Comentário:
+1. 'align-content' serve para alinhar os elementos do eixo transversal quando eles estão empacotados (múltiplas linhas).
+------------------------------------------------------------------
+Comando 6: Ordem e Alinhamento Individual (Itens)
+Objetivo: Alterar a posição ou o alinhamento de um único item específico.
+------------------------------------------------------------------
+div#item-especifico { order: -2; align-self: flex-end; }
+
+Comentário:
+1. 'order' altera a ordem visual do item sem mudar o código HTML.
+2. 'align-self' permite configurar um comportamento individual para o item, ignorando o alinhamento do pai.
+------------------------------------------------------------------
+Comando 7: Dimensionamento Flexível (Grow, Shrink, Basis)
+Objetivo: Controlar como os itens crescem, encolhem ou seu tamanho base.
+------------------------------------------------------------------
+div.item { flex-grow: 1; flex-shrink: 2; flex-basis: 250px; }
+
+Comentário:
+1. 'flex-grow' define o quanto o item pode crescer para ocupar o espaço disponível.
+2. 'flex-shrink' define a capacidade de encolhimento do item caso o espaço diminua.
+3. 'flex-basis' define o tamanho inicial do item antes da distribuição de espaço.
+------------------------------------------------------------------
+Comando 8: Atalho Flex (Shorthand)
+Objetivo: Definir grow, shrink e basis em uma única linha de código.
+------------------------------------------------------------------
+div.item { flex: 1 0 150px; }
+
+Comentário:
+1. A ordem correta no comando 'flex' é: flex-grow, flex-shrink e flex-basis.
