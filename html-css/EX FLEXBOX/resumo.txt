@@ -1,0 +1,12 @@
+1-  jUSTIFY-CONTENT : serve para alinhar o conteúdo,alinhar os itens dentro do eixo principal.
+2-  ALIGN-ITEMS: serve para alinhar os conteúdos,itens dentro do eixo transversal.
+3-  ALIGN-CONTENT: serve para alinhar os elementos do eixo transversal quando eles estão empacotados.
+4- FLEX-DIRECTION: serve para definir a direção do eixo principal (linha ou coluna).
+5- FLEX-WRAP: serve para definir se os itens devem quebrar linha ou se devem ficar todos na mesma linha.
+6- FLEX-FLOW: serve como um atalho (shorthand) para definir a direção e a quebra de linha simultaneamente.
+7- FLEX-GROW: serve para definir a capacidade de um item crescer para ocupar o espaço disponível no container.
+8 - FLEX-SHRINK: serve para definir a capacidade de um item encolher caso o container fique muito pequeno.
+9- FLEX-BASIS: serve para definir o tamanho base ou inicial de um item antes da distribuição do espaço.
+10- FLEX: serve como um atalho que agrupa as três propriedades acima (grow, shrink e basis) em uma só linha.
+11- ORDER: serve para alterar a ordem visual de um item específico sem modificar o código HTML.
+12- ALIGN-SELF: serve para alinhar um item individualmente, permitindo ignorar a regra de alinhamento do pai.
