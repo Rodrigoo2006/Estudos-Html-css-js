@@ -1,0 +1,21 @@
+1- DISPLAY: GRID serve para ativar o layout de grade no elemento pai.
+2- GRID-TEMPLATE-COLUMNS/ROWS: serve para definir a quantidade e o tamanho das colunas e linhas.
+3- GRID-TEMPLATE: é o atalho (shorthand) que junta 'grid-template-rows' e 'grid-template-columns'.
+4- GAP: serve para definir o espaçamento (buracos) entre as células da grade.
+5- GRID-AUTO-FLOW: serve para definir se os novos itens devem criar novas linhas (row) ou novas colunas (column).
+6- GRID-AUTO-COLUMNS: serve para definir a largura padrão de colunas criadas automaticamente pelo fluxo.
+7- GRID-ROW / GRID-COLUMN: serve para definir em qual linha/coluna o item começa e em qual termina.
+8- GRID-AREA: serve como um super atalho para definir (row-start / col-start / row-end / col-end) de uma vez.
+9- PLACE-ITEMS: serve como atalho para 'align-items' (vertical) e 'justify-items' (horizontal).
+10- PLACE-CONTENT: serve como atalho para 'align-content' e 'justify-content' (conjunto de tudo).
+REPEAT(): serve para repetir um valor várias vezes (ex: repeat(3, 100px) cria 3 colunas de 100px).
+11- 1FR (Fraction Unit): serve para ocupar uma "fração" do espaço disponível. É melhor que usar % porque ele desconta o GAP automaticamente.
+
+
+/* align-items: start; /*CROSS AXIS */
+/* justify-items: center; */
+/* Shorthand de items = Place-Items*/
+
+/*align-content: center; conjunto de tudo,CROSS AXIS*/
+/*justify-content: center; conjunto de tudo,MAIN AXIS*/
+/* Shorthand de content = Place-content*/

@@ -1,0 +1,71 @@
+🏁 Guia de Referência: CSS Grid Layout
+------------------------------------------------------------------
+Comando 1: Ativação e Definição de Colunas/Linhas
+Objetivo: Definir o container como grade e criar as faixas básicas.
+------------------------------------------------------------------
+CSS
+
+div.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+}
+Comentário:
+1- DISPLAY: GRID serve para ativar o layout de grade no elemento pai.
+2- GRID-TEMPLATE-COLUMNS/ROWS: serve para definir a quantidade e o tamanho das colunas e linhas.
+3- GAP: serve para definir o espaçamento (buracos) entre as células da grade.
+------------------------------------------------------------------
+Comando 2: Unidades Especiais e Repetição (fr e repeat)
+Objetivo: Criar grades flexíveis sem repetir valores manualmente.
+------------------------------------------------------------------
+CSS
+
+div.container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+}
+Comentário:
+1- 1FR: serve como uma fração do espaço disponível; divide o tamanho do container pela quantidade de FR.
+2- REPEAT(x, valor): serve para repetir um tamanho 'x' vezes sem precisar digitar várias vezes.
+3- GRID-AUTO-ROWS: serve para definir um tamanho padrão para qualquer nova linha criada automaticamente.
+------------------------------------------------------------------
+Comando 3: Atalhos de Alinhamento (Place-Items e Place-Content)
+Objetivo: Centralizar ou posicionar itens e conteúdo rapidamente.
+------------------------------------------------------------------
+CSS
+
+div.container {
+    place-items: center center;
+    place-content: space-between end;
+}
+Comentário:
+1- PLACE-ITEMS: serve como atalho para 'align-items' (vertical) e 'justify-items' (horizontal).
+2- PLACE-CONTENT: serve como atalho para 'align-content' e 'justify-content' (conjunto de tudo).
+------------------------------------------------------------------
+Comando 4: Posicionamento Individual (Células e Áreas)
+Objetivo: Fazer um item ocupar várias linhas ou colunas específicas.
+------------------------------------------------------------------
+CSS
+
+div.caixa1 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 5;
+    grid-area: 1 / 1 / 2 / 4;
+}
+Comentário:
+1- GRID-ROW / GRID-COLUMN: serve para definir em qual linha/coluna o item começa e em qual termina.
+2- GRID-AREA: serve como um super atalho para definir (row-start / col-start / row-end / col-end) de uma vez.
+------------------------------------------------------------------
+Comando 5: Fluxo Automático (Implicit Grid)
+Objetivo: Controlar como novos itens se comportam na grade.
+------------------------------------------------------------------
+CSS
+
+div.container {
+    grid-auto-flow: row;
+    grid-auto-columns: 120px;
+}
+Comentário:
+1- GRID-AUTO-FLOW: serve para definir se os novos itens devem criar novas linhas (row) ou novas colunas (column).
+2- GRID-AUTO-COLUMNS: serve para definir a largura padrão de colunas criadas automaticamente pelo fluxo.
