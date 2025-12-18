@@ -1,0 +1,75 @@
+📝 Guia de Referência: HTML Forms (Formulários)
+------------------------------------------------------------------
+Comando 1: Estrutura Global do Formulário
+Objetivo: Criar a área que capturará os dados e enviará para o servidor.
+------------------------------------------------------------------
+HTML
+
+<form action="cadastro.php" method="post">
+    </form>
+Comentário:
+1- FORM: serve para delimitar a área onde o usuário insere dados para serem enviados.
+2- ACTION: serve para definir para qual arquivo ou link os dados serão enviados.
+3- METHOD: serve para definir como os dados serão enviados (GET para dados simples/URLs, POST para dados sensíveis/seguros).
+------------------------------------------------------------------
+Comando 2: Rótulos e Campos de Texto (Label e Input)
+Objetivo: Identificar o campo e permitir a escrita de texto simples.
+------------------------------------------------------------------
+HTML
+
+<label for="idnome">Nome:</label>
+<input type="text" name="nome" id="idnome" placeholder="Digite seu nome" required>
+Comentário:
+4- LABEL: serve para dar um título ao campo; o atributo 'for' liga o rótulo ao 'id' do input.
+5- INPUT (text): serve para criar uma caixa onde o usuário digita textos curtos.
+6- PLACEHOLDER: serve para exibir uma dica cinza dentro do campo antes do usuário digitar.
+7- REQUIRED: serve para obrigar o preenchimento do campo antes de enviar o formulário.
+------------------------------------------------------------------
+Comando 3: Tipos de Dados Específicos
+Objetivo: Validar automaticamente e-mails, senhas e números.
+------------------------------------------------------------------
+HTML
+
+<input type="password" name="senha" id="idsenha">
+<input type="email" name="email" id="idemail">
+<input type="number" name="idade" id="ididade" min="18" max="100">
+Comentário:
+8- TYPE="PASSWORD": serve para esconder os caracteres digitados (bolinhas).
+9- TYPE="EMAIL": serve para validar se o texto digitado possui o formato de e-mail (@).
+10- TYPE="NUMBER": serve para aceitar apenas números e permite definir valores mínimos (min) e máximos (max).
+------------------------------------------------------------------
+Comando 4: Seleção e Múltipla Escolha
+Objetivo: Permitir que o usuário escolha opções pré-definidas.
+------------------------------------------------------------------
+HTML
+
+<input type="radio" name="sexo" id="idm"> <label for="idm">Masc</label>
+<input type="checkbox" name="termos" id="idtermos">
+Comentário:
+11- RADIO: serve para seleções únicas onde o usuário escolhe apenas UMA opção de um grupo (o 'name' deve ser igual em todos).
+12- CHECKBOX: serve para seleções múltiplas ou confirmações (tipo "li e aceito os termos").
+------------------------------------------------------------------
+Comando 5: Listas Suspensas e Áreas de Texto
+Objetivo: Criar menus de escolha ou campos para mensagens longas.
+------------------------------------------------------------------
+HTML
+
+<select name="estado" id="idestado">
+    <option value="BA">Bahia</option>
+</select>
+
+<textarea name="msg" id="idmsg" cols="30" rows="10"></textarea>
+Comentário:
+13- SELECT / OPTION: serve para criar uma lista suspensa (dropdown) de opções.
+14- TEXTAREA: serve para criar uma caixa de texto grande para mensagens ou comentários longos.
+------------------------------------------------------------------
+Comando 6: Finalização (Botões)
+Objetivo: Limpar ou enviar os dados do formulário.
+------------------------------------------------------------------
+HTML
+
+<input type="submit" value="Enviar Dados">
+<input type="reset" value="Limpar Tudo">
+Comentário:
+15- SUBMIT: serve para disparar o envio de todos os dados do formulário.
+16- RESET: serve para apagar tudo o que foi digitado e voltar ao estado inicial.

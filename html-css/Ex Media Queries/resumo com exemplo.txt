@@ -1,0 +1,56 @@
+📱 Guia de Referência: Media Queries (Responsividade)
+------------------------------------------------------------------
+Comando 1: Estrutura Básica (@media)
+Objetivo: Criar uma regra que só é ativada em certas condições de tela.
+------------------------------------------------------------------
+CSS
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+Comentário:
+1- @MEDIA: serve como o gatilho principal para iniciar qualquer regra de responsividade no CSS.
+2- MEDIA TYPES (screen): serve para definir o tipo de dispositivo (screen para telas, print para impressão).
+3- MAX-WIDTH: serve para aplicar o estilo apenas se a tela for IGUAL ou MENOR que o valor definido (ex: 600px).
+4- MIN-WIDTH: serve para aplicar o estilo apenas se a tela for IGUAL ou MAIOR que o valor definido (estratégia Mobile-First).
+------------------------------------------------------------------
+Comando 2: Operadores Lógicos e Orientação
+Objetivo: Combinar condições ou verificar a posição do aparelho.
+------------------------------------------------------------------
+CSS
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    div.conteiner {
+        display: flex;
+    }
+}
+Comentário:
+5- AND: serve para combinar duas ou mais condições; a regra só funciona se todas forem verdadeiras.
+6- ORIENTATION: serve para verificar se o dispositivo está em pé (portrait) ou deitado (landscape).
+7- COMMA ( , ): funciona como o operador "OU"; a regra funciona se pelo menos uma das condições for atingida.
+------------------------------------------------------------------
+Comando 3: Breakpoints (Pontos de Interrupção)
+Objetivo: Definir os tamanhos padrão onde o layout deve mudar.
+------------------------------------------------------------------
+Comentário:
+8- BREAKPOINTS: servem como os "pontos de corte" baseados em dispositivos reais.
+- Celulares: até 480px.
+- Tablets: de 481px até 768px.
+- Laptops/Monitores: acima de 769px.
+9- VIEWPORT META TAG: serve para garantir que o navegador mobile entenda a largura real da tela (visto no seu <head>).
+------------------------------------------------------------------
+Comando 4: Recursos Modernos (Hover e Pointer)
+Objetivo: Detectar se o usuário usa touch ou mouse.
+------------------------------------------------------------------
+CSS
+
+@media (hover: hover) {
+    button:hover {
+        background-color: blue;
+    }
+}
+Comentário:
+10- HOVER: serve para aplicar estilos apenas em dispositivos que possuem mouse (evita bugs em telas touch).
+11- PREFERS-COLOR-SCHEME: serve para detectar se o usuário usa o Windows/Celular no "Modo Escuro" ou "Modo Claro".

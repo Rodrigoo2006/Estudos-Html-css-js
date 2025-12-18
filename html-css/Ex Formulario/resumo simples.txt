@@ -1,0 +1,10 @@
+1- FORM: Início do formulário.
+2- LABEL: Título do campo (clicável).
+3- INPUT (text/email/pass): Entrada de dados simples.
+4- RADIO: Escolha única.
+5- CHECKBOX: Escolha múltipla.
+6- SELECT/OPTION: Menu de lista.
+7- TEXTAREA: Texto longo.
+8- SUBMIT: Botão de enviar.
+9- PLACEHOLDER: Dica dentro da caixa.
+10- REQUIRED: Campo obrigatório.

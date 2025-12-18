@@ -1,0 +1,9 @@
+1- @MEDIA: Gatilho da responsividade.
+2- MEDIA TYPES: Define o dispositivo (screen, print, all).
+3- MAX-WIDTH: Limite máximo de largura (até X pixels).
+4- MIN-WIDTH: Limite mínimo de largura (a partir de X pixels).
+5- AND: Operador "E" (acumula condições).
+6- ORIENTATION: Verifica se a tela está deitada ou em pé.
+7- BREAKPOINTS: Tamanhos de tela onde o layout muda.
+8- HOVER: Detecta se existe um ponteiro/mouse.
+9- PLACEHOLDER/DISPLAY: Usado dentro da media query para esconder ou mostrar itens em telas menores.
